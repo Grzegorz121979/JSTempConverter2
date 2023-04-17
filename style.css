@@ -14,3 +14,44 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+#div-el {
+    margin: auto;
+    width: 50%;
+}
+
+#value {
+    margin: auto;
+    display: block;
+    height: 35px;
+    font-size: 20px;
+}
+
+#conver-btn {
+    border-radius: 5px;
+    background-color: rgb(96, 245, 99);
+    color: green;
+    font-weight: bold;
+    font-size: 22px;
+    width: 120px;
+    height: 50px;
+}
+
+#clear-btn {
+    border-radius: 5px;
+    background-color: rgb(213, 89, 89);
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+    width: 120px;
+    height: 50px;
+}
+
+#div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    font-size: 25px;
+}
