@@ -14,7 +14,7 @@
                 <input type="radio" name="from">
                 <label>Fahrenheit</label><br>
                 <input type="radio" name="from">
-                <label>Kelwin</label>
+                <label>Kelvin</label>
             </div>
             <div class="myDiv-el">
                 <h2>To</h2>
@@ -23,18 +23,20 @@
                 <input type="radio" name="to">
                 <label>Fahrenheit</label><br>
                 <input type="radio" name="to">
-                <label>Kelwin</label>
+                <label>Kelvin</label>
             </div>
         </div>
         <div id="div-el">
             <input type="text" id="value"><br>
             <div id="div-btn">
-                <button id="conver-btn">Convert</button>
-                <button id="clear-btn">Clear</button><br>
+                <button id="conver-btn" onclick="convert()">Convert</button>
+                <button id="clear-btn" onclick="clearBtn()">Clear</button><br>
             </div>
         </div>
         <div id="div-label">
             <label id="result"></label>
         </div>
+
+        <script src="index.js"></script>
     </body>
 </html>
