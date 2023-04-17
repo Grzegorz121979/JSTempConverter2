@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+.myDiv-el {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+}
+
+#container {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
