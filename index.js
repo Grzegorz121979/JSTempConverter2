@@ -7,32 +7,33 @@ function convert() {
 
     if (fromEl[0].checked && toEl[1].checked) {
         let result = (parseFloat(userValue) * (9 / 5) + 32)
-        convertResult.innerHTML = result.toFixed(2)
+        convertResult.innerHTML = result.toFixed(2) + "°F"
     }
 
     if (fromEl[0].checked && toEl[2].checked) {
         let result = parseFloat(userValue) + 273.15
-        convertResult.innerHTML = result.toFixed(2)
+        convertResult.innerHTML = result.toFixed(2) + "K"
     }
 
     if (fromEl[1].checked && toEl[0].checked) {
         let result = (parseFloat(userValue) - 32) * 5 / 9
-        convertResult.innerHTML = result.toFixed(2)
+        convertResult.innerHTML = result.toFixed(2) + "°C"
     }
 
     if (fromEl[1].checked && toEl[2].checked) {
         let result = (parseFloat(userValue) - 32) * 5 / 9 + 273.15
-        convertResult.innerHTML = result.toFixed(2)
+        convertResult.innerHTML = result.toFixed(2) + "K"
     }
 
     if (fromEl[2].checked && toEl[0].checked) {
         let result = parseFloat(userValue) - 273.15
-        convertResult.innerHTML = result.toFixed(2)
+        convertResult.innerHTML = result.toFixed(2) + "°C"
     }
 
     if (fromEl[2].checked && toEl[1].checked) {
-        let result = parseFloat(userValue)
-        convertResult.innerHTML = 1.8 * (result.toFixed(2) - 273.15) + 32
+        let result = 1.8 * (parseFloat(userValue) - 273.15) + 32
+        convertResult.innerHTML = result.toFixed(2) + "°F"
+        
     }
 }
 
